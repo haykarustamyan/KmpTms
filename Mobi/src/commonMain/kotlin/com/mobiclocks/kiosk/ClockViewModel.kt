@@ -12,7 +12,7 @@ import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 
 class ClockViewModel(
-    private val httpClient: HttpClient = HttpClientProvider(accessToken = "804d23b7-9bac-499e-b2a7-b9022648f528").create()
+    private val httpClient: HttpClient = HttpClientProvider(accessToken = "af98517c-f0dc-4334-82cb-639e0839424a").create()
 ) : ViewModel() {
     private val _clockState = MutableStateFlow(ClockUiState(isLoading = false))
     val clockState: StateFlow<ClockUiState> = _clockState
